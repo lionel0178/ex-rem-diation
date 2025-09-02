@@ -1,0 +1,113 @@
+:root {
+      --primary-color: #0078D7; /* bleu contrasté */
+      --primary-color-hover: #005A9E; /* couleur bleu foncé  */
+      --background-color: #D2691E; /* marron sable */
+      --text-color: #222; 
+      --container-bg: #D3D3D3;
+      --border-color: #aaa;
+    }
+body {
+      font-family: Arial, sans-serif;
+      background: var(--container-bg);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--background-color);
+      color: var(--text-color);
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: var(--container-bg);
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: var(--primary-color); /* bleu contrasté */
+      color: var(--container-bg);
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: var(--primary-color-hover);
+    }
+
+    #resultat {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 18px;
+      background-color: white;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--background-color);
+      color: var(--text-color);
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    /* Responsive basique */
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      form {
+        padding: 15px;
+      }
+
+      button {
+        font-size: 15px;
+      }
+    }
